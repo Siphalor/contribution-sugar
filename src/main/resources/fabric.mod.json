@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "contributionsugar",
+	"version": "${version}",
+	"name": "Contriution Sugar",
+	"description": "Grants the ability to get capes for contributing to mods",
+	"authors": [
+		"Siphalor"
+	],
+	"contributors": [],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/contributionsugar/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			{
+				"value": "de.siphalor.contributionsugar.ContributionSugar"
+			}
+		]
+	},
+	"mixins": [
+		"contributionsugar.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.4.0"
+	},
+	"custom": {
+		"contributionsugar": {
+			"cape": "contributionsugar:cape.png",
+			"elytra": "contributionsugar:cape.png"
+		}
+	}
+}
